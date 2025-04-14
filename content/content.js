@@ -287,6 +287,7 @@ window.addEventListener('load', () => {
                     // Remove this suggestion item
                     if (suggestionItem && suggestionItem.parentNode) {
                         suggestionItem.parentNode.removeChild(suggestionItem);
+                        remainingSuggestions.removeChild(suggestionItem);
                     }
 
                     // Update the replace all button count
